@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Negative Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Negative Generator</h1>
+        <p class="description">Upload an image to generate its negative version</p>
+        
+        <div class="upload-section">
+            <input type="file" id="imageInput" accept="image/*" />
+            <label for="imageInput" class="upload-btn">Choose Image</label>
+        </div>
+
+        <div class="images-container">
+            <div class="image-box">
+                <h3>Original Image</h3>
+                <canvas id="originalCanvas"></canvas>
+            </div>
+            
+            <div class="image-box">
+                <h3>Negative Image</h3>
+                <canvas id="negativeCanvas"></canvas>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button id="processBtn" class="action-btn" disabled>Generate Negative</button>
+            <button id="downloadBtn" class="action-btn" disabled>Download Negative</button>
+            <button id="resetBtn" class="action-btn">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
